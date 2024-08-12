@@ -1,0 +1,77 @@
+:root{
+    --fonte-principal: "Montserrat";
+    --cor-de-fundo: #f5f3fb; 
+    --cor-da-fonte-pinc:  #464646;
+    --laranja: #FFB050;
+
+}
+body{
+    background-color: var(--cor-de-fundo); 
+
+}
+.cabecalho{
+    font-family: var(--fonte-principal);
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  
+}
+.img__header{
+    height: 5rem;
+    width: 5rem;
+}
+.titulo__header{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.sub__header{
+    font-size: 14px;
+    color: #A3A3A3;
+}
+.menu__texto{  
+    color: black;
+}
+.botao__cabecalho{
+    text-decoration: none;
+}
+.itens__cabecalho{
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+.lista__cabecalho{
+    justify-content: space-between;
+    display: flex;
+}
+.menu__texto{
+    font-size: 12px;
+}
+.cabecalho__menu{
+    background-color: white;
+    border-bottom-left-radius:14px;
+    border-bottom-right-radius:14px;
+    padding: 0.7rem;
+
+}
+.div__cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+@media screen and (min-width:768px){
+    .lista__cabecalho{
+        justify-content: space-evenly;
+        margin: 0rem 10rem;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .img__header{
+        margin-left: 3rem;
+    }
+    .lista__cabecalho{
+        display: flex;
+        margin: 0rem 40rem
+    }
+}
